@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moving Particles Background</title>
+
+    <!-- Page Style -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #000; /* Dark background */
+            overflow: hidden;
+        }
+
+        /* Particles container */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;   /* behind everything */
+        }
+
+        /* Sample content */
+        .content {
+            position: relative;
+            z-index: 5;
+            color: #fff;
+            text-align: center;
+            margin-top: 40vh;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Foreground Content -->
+    <div class="content">
+       <h1>Love You Zagdalu insan ❤️</h1>
+       <sub>-Chiku</sub>
+    </div>
+
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Particles Configuration -->
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 90 },
+                "size": { "value": 3 },
+                "move": { "speed": 1.6 },
+                "color": { "value": ["#00fff7", "#ff00e1"] },  /* Neon cyan + pink */
+                "line_linked": {
+                    "enable": true,
+                    "color": "#ff00e1"
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
